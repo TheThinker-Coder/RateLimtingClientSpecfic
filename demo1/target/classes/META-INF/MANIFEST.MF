@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Its
+Build-Jdk: 15.0.1
+Implementation-Title: demo1
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.tay
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/demo1
+Created-By: Maven Integration for Eclipse
+

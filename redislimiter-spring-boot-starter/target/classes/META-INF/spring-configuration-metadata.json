@@ -1,0 +1,84 @@
+{
+  "groups": [
+    {
+      "name": "spring.redis-limiter",
+      "type": "com.tay.redislimiter.RedisLimiterProperties",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.redis-limiter.channel",
+      "type": "java.lang.String",
+      "description": "channel for pub\/sub limiter configuration change event",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    },
+    {
+      "name": "spring.redis-limiter.check-action-timeout",
+      "type": "java.lang.Integer",
+      "description": "check action execution timeout(MILLISECONDS)",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    },
+    {
+      "name": "spring.redis-limiter.enable-dynamical-conf",
+      "type": "java.lang.Boolean",
+      "description": "the flag to tell whether rate limiter configuration can change dynamically",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    },
+    {
+      "name": "spring.redis-limiter.redis-connection-timeout",
+      "type": "java.lang.Integer",
+      "description": "Redis connection timeout",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    },
+    {
+      "name": "spring.redis-limiter.redis-host",
+      "type": "java.lang.String",
+      "description": "Redis server host",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    },
+    {
+      "name": "spring.redis-limiter.redis-key-prefix",
+      "type": "java.lang.String",
+      "description": "the redis key prefix",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    },
+    {
+      "name": "spring.redis-limiter.redis-password",
+      "type": "java.lang.String",
+      "description": "Redis access password",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    },
+    {
+      "name": "spring.redis-limiter.redis-pool-max-idle",
+      "type": "java.lang.Integer",
+      "description": "max idle connections in the pool",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    },
+    {
+      "name": "spring.redis-limiter.redis-pool-max-total",
+      "type": "java.lang.Integer",
+      "description": "the max total instances in the pool",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    },
+    {
+      "name": "spring.redis-limiter.redis-pool-max-wait-millis",
+      "type": "java.lang.Long",
+      "description": "the max wait milliseconds for borrowing an instance from the pool",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    },
+    {
+      "name": "spring.redis-limiter.redis-pool-min-idle",
+      "type": "java.lang.Integer",
+      "description": "min idle connection in the pool",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    },
+    {
+      "name": "spring.redis-limiter.redis-port",
+      "type": "java.lang.Integer",
+      "description": "Redis service port",
+      "sourceType": "com.tay.redislimiter.RedisLimiterProperties"
+    }
+  ],
+  "hints": []
+}
