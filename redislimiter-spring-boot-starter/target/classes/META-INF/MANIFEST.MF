@@ -3,7 +3,7 @@ Built-By: Its
 Build-Jdk: 15.0.1
 Implementation-Title: redislimiter-spring-boot-starter
 Implementation-Version: 0.0.1-SNAPSHOT
-Implementation-Vendor-Id: com.redislimiter
+Implementation-Vendor-Id: com.tay
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
  -starter-parent/redislimiter-spring-boot-starter
 Created-By: Maven Integration for Eclipse
