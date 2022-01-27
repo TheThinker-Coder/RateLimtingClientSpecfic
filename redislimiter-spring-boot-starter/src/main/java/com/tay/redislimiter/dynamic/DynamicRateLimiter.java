@@ -1,6 +1,4 @@
-
 package com.tay.redislimiter.dynamic;
-
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 import java.util.concurrent.TimeUnit;

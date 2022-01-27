@@ -1,4 +1,3 @@
-
 package com.tay.redislimiter.core;
 
 import com.github.benmanes.caffeine.cache.Cache;
@@ -7,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import redis.clients.jedis.JedisPool;
-
 import java.util.concurrent.TimeUnit;
 
 @RequiredArgsConstructor

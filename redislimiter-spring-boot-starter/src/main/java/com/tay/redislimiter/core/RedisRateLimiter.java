@@ -1,19 +1,12 @@
-
 package com.tay.redislimiter.core;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import lombok.RequiredArgsConstructor;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
-/**
- * Redis based Rate limiter
- *
- * @author Aiyun Tang <aiyun.tang@gmail.com>
- */
 @RequiredArgsConstructor
 public class RedisRateLimiter {
     private JedisPool jedisPool;
@@ -102,8 +95,7 @@ public class RedisRateLimiter {
         long currentSecond = Long.parseLong(jedisTime.get(0));
         long microSecondsElapseInCurrentSecond = Long.parseLong(jedisTime.get(1));
         String[] keyNames = getKeyNames(currentSecond, keyPrefix);
-        //因为redis访问实际上是单线程的，而且jedis.time()方法返回的时间精度为微秒级，每一个jedis.time()调用耗时应该会超过1微秒，因此我们可以认为每次jedis.time()返回的时间都是唯一且递增
-        //因此这个currentTimeInMicroSecond在多线程情况下不会存在相同
+        
         long currentTimeInMicroSecond = currentSecond * 1000000 + microSecondsElapseInCurrentSecond;
         String previousSectionBeginScore = String.valueOf((currentTimeInMicroSecond - getPeriodMicrosecond()));
         String expires =String.valueOf(getExpire());
